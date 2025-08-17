@@ -1,5 +1,5 @@
 const { BetaAnalyticsDataClient } = require('@google-analytics/data')
-const credentials = require('../ecom-463615-d5ecb8f322c7.json')
+const credentials = JSON.parse(process.env.credentials)
 
 const analyticsDataClient = new BetaAnalyticsDataClient({
   credentials: {
